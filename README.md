@@ -1,1 +1,1 @@
-GIF Recipe API
+## GIF Recipe API
