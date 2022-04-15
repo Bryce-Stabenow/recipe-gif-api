@@ -8,7 +8,7 @@ A quick and useful API that delivers recipes in the Internet's favorite file for
   </p>
 </div>
 
-<iframe src='https://gfycat.com/ifr/GrotesqueMatureGalapagossealion' frameborder='0' scrolling='no' allowfullscreen width='640' height='684'></iframe>
+<img src="public/The-Emperor-s-New-Groove-the-emperors-new-groove-39349997-500-285.gif" alt="dumb gif from The Emporer's New Groove">
 <!-- LICENSE -->
 ## License
 
