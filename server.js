@@ -6,667 +6,752 @@ const PORT = 3000;
 
 /* ===API Data Storage (until migration to MongoDB)======== */
 const recipes = {
-    "Chicken Alfredo Penne": {
+    "chickenalfredopenne": {'name': 'Chicken Alfredo Penne',
         'gifLink': 'https://gfycat.com/ifr/WastefulHappyAnemonecrab',
         'cuisine': 'Italian',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Crunchwraps": {
+    "crunchwraps": {'name': 'Crunchwraps',
         'gifLink': 'https://i.imgur.com/SqmxiZL.gifv',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "S'mores Tiramisu": {
+    "s'morestiramisu": {'name': "S'mores Tiramisu",
         'gifLink': 'https://gfycat.com/ifr/AcidicObedientAnkolewatusi',
         'cuisine': 'Italian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Scalloped Potatos": {
+    "scallopedpotatos": {'name': 'Scalloped Potatos',
         'gifLink': 'https://gfycat.com/ifr/EarnestTornFluke',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Cinnamon Roll Pancakes": {
+    "cinnamonrollpancakes": {'name': 'Cinnamon Roll Pancakes',
         'gifLink': 'https://gfycat.com/ifr/ImpartialAmusedBantamrooster',
         'cuisine': 'American',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "Japanese Goya": {
+    "japanesegoya": {'name': 'Japanese Goya',
         'gifLink': 'https://gfycat.com/ifr/FoolishCooperativeChihuahua',
         'cuisine': 'Japanese',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Stovetop Mac & Cheese": {
+    "stovetopmacandcheese": {'name': 'Stovetop Mac & Cheese',
         'gifLink': 'https://gfycat.com/ifr/ThinLonelyAmericanriverotter',
         'cuisine': 'American',
-        'meal': 'Dinner',
-        'mealCourse': 'Main Dish/Side Dish'
-    },
-    "Cheese Stuffed Mash Beef Pie": {
-        'gifLink': 'https://gfycat.com/ifr/HighlevelAgreeableClingfish',
-        'cuisine': 'American',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Quesarito": {
+    "cheesestuffedmashbeefpie": {'name': 'Cheese Stuffed Mash Beef Pie',
+        'gifLink': 'https://gfycat.com/ifr/HighlevelAgreeableClingfish',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
+    },
+    "quesarito": {'name': 'Quesarito',
         'gifLink': 'https://gfycat.com/ifr/ConcreteKindheartedEquine',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Tacos Al Pastor": {
+    "tacosalpastor": {'name': 'Tacos Al Pastor',
         'gifLink': 'https://gfycat.com/ifr/TenderCarelessAgama',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Beef Stroganoff": {
+    "beefstroganoff": {'name': 'Beef Stroganoff',
         'gifLink': 'https://gfycat.com/ifr/CloudyFlickeringAustralianfurseal',
         'cuisine': 'Russian',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Sausage-wrapped Eggs": {
+    "sausage-wrappedeggs": {'name': 'Sausage-wrapped Eggs',
         'gifLink': 'https://i.imgur.com/sOJWPZ0.gifv',
         'cuisine': 'American',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "Beef and Garlic Noodles": {
+    "beefandgarlicnoodles": {'name': 'Beef and Garlic Noodles',
         'gifLink': 'https://i.imgur.com/yLnUqGD.gifv',
         'cuisine': 'Chinese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Pizza Cone Dip Ring": {
+    "pizzaconedipring": {'name': 'Pizza Cone Dip Ring',
         'gifLink': 'https://gfycat.com/ifr/CourteousBowedGuineapig',
         'cuisine': 'American',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Appetizer'
     },
-    "Easy Butter Chicken": {
+    "easybutterchicken": {'name': 'Easy Butter Chicken',
         'gifLink': 'https://gfycat.com/ifr/SilverShrillDrongo',
         'cuisine': 'Indian',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Pan Seared Salmon": {
+    "pansearedsalmon": {'name': 'Pan Seared Salmon',
         'gifLink': 'https://gfycat.com/ifr/FinePossibleDonkey',
         'cuisine': 'French',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Country Fried Steak with Country Gravy": {
+    "countryfriedsteakwithcountrygravy": {'name': 'Country Fried Steak with Country Gravy',
         'gifLink': 'https://i.imgur.com/Xh8UHyi.gifv',
-        'cuisine': 'American South',
-        'meal': 'Dinner',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Garlic Butter Steak with Crispy Potatoes and Asparagus": {
+    "garlicbuttersteakwithcrispypotatoesandasparagus": {'name': 'Garlic Butter Steak with Crispy Potatoes and Asparagus',
         'gifLink': 'https://gfycat.com/ifr/PlasticOilyGalapagosdove',
-        'cuisine': 'Continental',
-        'meal': 'Dinner',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Teriyaki Chicken": {
+    "teriyakichicken": {'name': 'Teriyaki Chicken',
         'gifLink': 'https://i.imgur.com/uaL2z9G.gifv',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Sticky Shiitake Mushrooms": {
+    "stickyshiitakemushrooms": {'name': 'Sticky Shiitake Mushrooms',
         'gifLink': 'https://gfycat.com/ifr/FilthyPolishedHuia',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "General Tso's Chicken": {
+    "generaltso'schicken": {'name': "General Tso's Chicken",
         'gifLink': 'https://i.imgur.com/sVrmkys.gifv',
         'cuisine': 'Chinese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Buckeye Cookies": {
+    "buckeyecookies": {'name': 'Buckeye Cookies',
         'gifLink': 'https://gfycat.com/ifr/RipeFavorableFrogmouth',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Bacon Double Cheeseburger Pop-Tarts": {
+    "bacondoublecheeseburgerpop-tarts": {'name': 'Bacon Double Cheeseburger Pop-Tarts',
         'gifLink': 'https://gfycat.com/ifr/LawfulHeftyGrayreefshark',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Beef and Broccoli Stir-Fry": {
+    "beefandbroccolistir-fry": {'name': 'Beef and Broccoli Stir-Fry',
         'gifLink': 'https://gfycat.com/ifr/LavishMintyFinch',
         'cuisine': 'Chinese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Black Bean Soup": {
+    "blackbeansoup": {'name': 'Black Bean Soup',
         'gifLink': 'https://i.imgur.com/TLdgLRR.gifv',
         'cuisine': 'Unknown',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Poached Eggs": {
+    "poachedeggs": {'name': 'Poached Eggs',
         'gifLink': 'https://gfycat.com/ifr/NaiveFickleDwarfrabbit',
         'cuisine': 'French',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "Garlic Mushrooms": {
+    "garlicmushrooms": {'name': 'Garlic Mushrooms',
         'gifLink': 'https://gfycat.com/ifr/BlandInexperiencedCrab',
         'cuisine': 'Unknown',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Scotch Eggs": {
+    "scotcheggs": {'name': 'Scotch Eggs',
         'gifLink': 'https://gfycat.com/ifr/VapidIllAmericanrobin',
-        'cuisine': 'Scottish',
+        'cuisine': 'American',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "French Onion Cheese Melt": {
+    "frenchonioncheesemelt": {'name': 'French Onion Cheese Melt',
         'gifLink': 'https://gfycat.com/ifr/OrganicPeskyIvorybackedwoodswallow',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Chocolate Fudge Stuffed Cookie Slices": {
+    "chocolatefudgestuffedcookieslices": {'name': 'Chocolate Fudge Stuffed Cookie Slices',
         'gifLink': 'https://gfycat.com/ifr/AthleticAnyAddax',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Nutella Soufflé": {
+    "nutellasouffle": {'name': 'Nutella Soufflé',
         'gifLink': 'https://gfycat.com/ifr/ObedientEnragedGraywolf',
         'cuisine': 'American',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Salmon Meal Prep": {
+    "salmonmealprep": {'name': 'Salmon Meal Prep',
         'gifLink': 'https://i.imgur.com/fdbAWTE.gifv',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Kenyan Beef Samosas": {
+    "kenyanbeefsamosas": {'name': 'Kenyan Beef Samosas',
         'gifLink': 'https://i.imgur.com/H92NQ0o.gifv',
-        'cuisine': 'Kenyan',
+        'cuisine': 'African',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Chicken Cordon Bleu": {
+    "chickencordonbleu": {
+        'name': 'Chicken Cordon Bleu',
         'gifLink': 'https://i.imgur.com/qfpaZYo.gifv',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Jalepeno Popper Pigs in a Blanket": {
+    "jalepenopopperpigsinablanket": {
+        'name': 'Jalepeno Popper Pigs in a Blanket',
         'gifLink': 'https://gfycat.com/ifr/AmbitiousDamagedImpala',
-        'cuisine': 'American/Mexican',
+        'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Appetizer'
     },
-    "Croissant Doughnuts": {
+    "croissantdoughnuts": {
+        'name': 'Croissant Doughnuts',
         'gifLink': 'https://i.imgur.com/HUabgRf.gifv',
-        'cuisine': 'American/French',
+        'cuisine': 'French',
         'meal': 'Breakfast',
         'mealCourse': 'Dessert'
     },
-    "Japanese Fried Chicken Wrap": {
+    "japanesefriedchickenwrap": {
+        'name': 'Japanese Fried Chicken Wrap',
         'gifLink': 'https://gfycat.com/ifr/UnequaledFarflungCoral',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Dragon's Beard": {
+    "dragon'sbeard": {
+        'name': "Dragon's Beard",
         'gifLink': 'https://gfycat.com/ifr/CapitalMagnificentAcouchi',
         'cuisine': 'Unknown',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Creamy Chicken Bacon Pasta": {
+    "creamychickenbaconpasta": {
+        'name': 'Creamy Chicken Bacon Pasta',
         'gifLink': 'https://gfycat.com/ifr/HorribleDismalKestrel',
-        'cuisine': 'American/Italian',
-        'meal': 'Dinner',
+        'cuisine': 'Italian',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Creme Brûlée Cheesecake Bars": {
+    "cremebruleecheesecakebars": {
+        'name': 'Creme Brûlée Cheesecake Bars',
         'gifLink': 'https://i.imgur.com/V1sAV0G.gifv',
-        'cuisine': 'French/American',
+        'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Zebra Striped Cheesecake": {
+    "zebrastripedcheesecake": {
+        'name': 'Zebra Striped Cheesecake',
         'gifLink': 'https://i.imgur.com/0fYYoRC.gifv',
         'cuisine': 'American',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Homemade Garlic Bread": {
+    "homemadegarlicbread": {
+        'name': 'Homemade Garlic Bread',
         'gifLink': 'https://gfycat.com/ifr/GrimyNiftyGoosefish',
         'cuisine': 'Italian',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Yakisoba": {
+    "yakisoba": {
+        'name': 'Yakisoba',
         'gifLink': 'https://i.imgur.com/haeJk08.gifv',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Bacon Beer-Cheese Bread Bowl": {
+    "baconbeer-cheesebreadbowl": {
+        'name': 'Bacon Beer-Cheese Bread Bowl',
         'gifLink': 'https://gfycat.com/ifr/DentalColorfulBullmastiff',
         'cuisine': 'American',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Appetizer'
     },
-    "Jade Dumplings": {
+    "jadedumplings": {
+        'name': 'Jade Dumplings',
         'gifLink': 'https://gfycat.com/ifr/CelebratedOrganicArrowworm',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Vietnamese Caramel Pork": {
+    "vietnamesecaramelpork": {
+        'name': 'Vietnamese Caramel Pork',
         'gifLink': 'https://i.imgur.com/rEakkcd.gifv',
         'cuisine': 'Vietnamese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Sticky Sesame Popcorn Chicken": {
+    "stickysesamepopcornchicken": {
+        'name': 'Sticky Sesame Popcorn Chicken',
         'gifLink': 'https://gfycat.com/ifr/ConfusedIllFruitfly',
         'cuisine': 'Chinese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Beef Stew": {
+    "beefstew": {
+        'name': 'Beef Stew',
         'gifLink': 'https://i.imgur.com/4NRuIRJ.gifv',
         'cuisine': 'German',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Ultimate Steak Sandwich": {
+    "ultimatesteaksandwich": {
+        'name': 'Ultimate Steak Sandwich',
         'gifLink': 'https://i.imgur.com/bDB4L8V.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Calzones": {
+    "calzones": {
+        'name': 'Calzones',
         'gifLink': 'https://gfycat.com/ifr/HotFailingCottonmouth',
         'cuisine': 'Italian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Buttermilk Fried Chicken Fingers": {
+    "buttermilkfriedchickenfingers": {
+        'name': 'Buttermilk Fried Chicken Fingers',
         'gifLink': 'https://i.imgur.com/CiM4qcZ.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Greek Lemon Potatoes": {
+    "greeklemonpotatoes": {
+        'name': 'Greek Lemon Potatoes',
         'gifLink': 'https://i.imgur.com/WkELQCy.gifv',
         'cuisine': 'Greek',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Churro Ice Cream Bowls": {
+    "churroicecreambowls": {
+        'name': 'Churro Ice Cream Bowls',
         'gifLink': 'http://i.imgur.com/XlaPuoy.gifv',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Jalepeno Burger Taquitos": {
+    "jalepenoburgertaquitos": {
+        'name': 'Jalepeno Burger Taquitos',
         'gifLink': 'https://gfycat.com/ifr/DistantConcernedAnnelida',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Rainbow Summer Rolls": {
+    "rainbowsummerrolls": {
+        'name': 'Rainbow Summer Rolls',
         'gifLink': 'https://gfycat.com/ifr/EarnestLinearBass',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Main Course/Appetizer'
+        'mealCourse': 'Appetizer'
     },
-    "Chicken Tikka Masala": {
+    "chickentikkamasala": {
+        'name': 'Chicken Tikka Masala',
         'gifLink': 'https://gfycat.com/ifr/PartialOilyGerbil',
         'cuisine': 'Indian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Nashville Fried Chicken": {
+    "nashvillefriedchicken": {
+        'name': 'Nashville Fried Chicken',
         'gifLink': 'https://i.imgur.com/aQccWrU.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Ramen Stir Fry": {
+    "ramenstirfry": {
+        'name': 'Ramen Stir Fry',
         'gifLink': 'https://gfycat.com/ifr/EnergeticScrawnyClingfish',
-        'cuisine': 'Japanses',
+        'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Qatayef": {
+    "qatayef": {
+        'name': 'Qatayef',
         'gifLink': 'https://gfycat.com/ifr/ImpressionableSourBullfrog',
         'cuisine': 'Arabian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Baked Lobster Tails": {
+    "bakedlobstertails": {
+        'name': 'Baked Lobster Tails',
         'gifLink': 'https://gfycat.com/ifr/BountifulAdventurousChevrotain',
         'cuisine': 'Unknown',
-        'meal': 'Dinner',
+        'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Tortilla Sandwich": {
+    "tortillasandwich": {
+        'name': 'Tortilla Sandwich',
         'gifLink': 'https://gfycat.com/ifr/ShallowObedientFiddlercrab',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Mongolian Beef": {
+    "mongolianbeef": {
+        'name': 'Mongolian Beef',
         'gifLink': 'https://gfycat.com/ifr/ThankfulRequiredAsianporcupine',
         'cuisine': 'Mongolian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Sloppy Joes": {
+    "sloppyjoes": {
+        'name': 'Sloppy Joes',
         'gifLink': 'https://i.imgur.com/hqCAk74.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Spicy Chicken Katsu": {
+    "spicychickenkatsu": {
+        'name': 'Spicy Chicken Katsu',
         'gifLink': 'https://gfycat.com/ifr/AnimatedAcidicAmericanindianhorse',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Creamy Lemon Pasta": {
+    "creamylemonpasta": {
+        'name': 'Creamy Lemon Pasta',
         'gifLink': 'https://gfycat.com/ifr/ScentedLoneCockroach',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Parisian Gnocchi": {
+    "parisiangnocchi": {
+        'name': 'Parisian Gnocchi',
         'gifLink': 'https://gfycat.com/ifr/InfamousSpiritedAdmiralbutterfly',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Japanese Karaage": {
+    "japanesekaraage": {
+        'name': 'Japanese Karaage',
         'gifLink': 'https://gfycat.com/ifr/ScornfulFrigidAfricanelephant',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Main Course/Side Dish'
+        'mealCourse': 'Appetizer'
     },
-    "Taco Triangles": {
+    "tacotriangles": {
+        'name': 'Taco Triangles',
         'gifLink': 'https://gfycat.com/ifr/UnevenChubbyGermanshorthairedpointer',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Beef Potstickers": {
+    "beefpotstickers": {
+        'name': 'Beef Potstickers',
         'gifLink': 'https://gfycat.com/ifr/AgilePessimisticCottontail',
         'cuisine': 'Chinese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Japanese Pancakes": {
+    "japanesepancakes": {
+        'name': 'Japanese Pancakes',
         'gifLink': 'https://gfycat.com/ifr/YearlyEveryHind',
         'cuisine': 'Japanese',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "Slow Cooker French Onion Soup": {
+    "slowcookerfrenchonionsoup": {
+        'name': 'Slow Cooker French Onion Soup',
         'gifLink': 'https://gfycat.com/ifr/CommonHighArrowana',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Smoker Pulled Pork": {
+    "smokerpulledpork": {
+        'name': 'Smoker Pulled Pork',
         'gifLink': 'https://gfycat.com/ifr/ContentAmpleIbex',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Two-Ingredient Flatbread": {
+    "two-ingredientflatbread": {
+        'name': 'Two-Ingredient Flatbread',
         'gifLink': 'https://i.imgur.com/ZZbDi2v.gifv',
-        'cuisine': 'Greek/Italian',
+        'cuisine': 'Greek',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Pommes Duchesse": {
+    "pommesduchesse": {
+        'name': 'Pommes Duchesse',
         'gifLink': 'https://gfycat.com/ifr/CorruptShockedGermanpinscher',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Honey Garlic Shrimp": {
+    "honeygarlicshrimp": {
+        'name': 'Honey Garlic Shrimp',
         'gifLink': 'https://gfycat.com/ifr/ScientificBigIlladopsis',
         'cuisine': 'Unknown',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Main Course/Side Dish'
+        'mealCourse': 'Main Course'
     },
-    "Seared Duck Breast with Duck Fat Fried Potatoes": {
+    "searedduckbreastwithduckfatfriedpotatoes": {
+        'name': 'Seared Duck Breast with Duck Fat Fried Potatoes',
         'gifLink': 'https://i.imgur.com/Dg3JIEC.gifv',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Japanese Cheesecake": {
+    "japanesecheesecake": {
+        'name': 'Japanese Cheesecake',
         'gifLink': 'http://i.imgur.com/Sc0eUEO.gifv',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Creamy Tuscan Chicken": {
+    "creamytuscanchicken": {
+        'name': 'Creamy Tuscan Chicken',
         'gifLink': 'https://gfycat.com/ifr/BossyBigheartedBlackbear',
         'cuisine': 'Italian',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Main Dish'
-    },
-    "Chicken and Waffle Slidders": {
-        'gifLink': 'http://i.imgur.com/0VicbsO.gifv',
-        'cuisine': 'American',
-        'meal': 'Breakfast/Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Cheesy Scalloped Potatoes": {
+    "chickenandwaffleslidders": {
+        'name': 'Chicken and Waffle Slidders',
+        'gifLink': 'http://i.imgur.com/0VicbsO.gifv',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
+    },
+    "cheesyscallopedpotatoes": {
+        'name': 'Cheesy Scalloped Potatoes',
         'gifLink': 'https://gfycat.com/ifr/LargeDeficientKentrosaurus',
         'cuisine': 'Unknown',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Parmesan Crusted Chicken Breast": {
+    "parmesancrustedchickenbreast": {
+        'name': 'Parmesan Crusted Chicken Breast',
         'gifLink': 'https://gfycat.com/ifr/FluffySmoggyGoldenmantledgroundsquirrel',
         'cuisine': 'Italian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Baba Ganoush": {
+    "babaganoush": {
+        'name': 'Baba Ganoush',
         'gifLink': 'https://gfycat.com/ifr/SimplisticSmartBobwhite',
-        'cuisine': 'Middle East',
+        'cuisine': 'Isreali',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Tomato Soup": {
+    "tomatosoup": {
+        'name': 'Tomato Soup',
         'gifLink': 'https://gfycat.com/ifr/ClosedPlaintiveLeafhopper',
         'cuisine': 'French',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Main Course/Side Dish'
+        'mealCourse': 'Main Course'
     },
-    "One-Pot Chinese Ribs": {
+    "one-potchineseribs": {
+        'name': 'One-Pot Chinese Ribs',
         'gifLink': 'https://gfycat.com/ifr/TornSparklingBackswimmer',
         'cuisine': 'Chinese',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Main COurse'
+        'mealCourse': 'Main Course'
     },
-    "Buffalo Chicken Pull-Apart Bread": {
+    "buffalochickenpull-apartbread": {
+        'name': 'Buffalo Chicken Pull-Apart Bread',
         'gifLink': 'https://i.imgur.com/KrFJO8V.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Appetizer/Side Dish'
+        'mealCourse': 'Appetizer'
     },
-    "Stuffed French Toast": {
+    "stuffedfrenchtoast": {
+        'name': 'Stuffed French Toast',
         'gifLink': 'https://i.imgur.com/o8HTk6v.gifv',
         'cuisine': 'French',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "Crispy Chili Beef": {
+    "crispychilibeef": {
+        'name': 'Crispy Chili Beef',
         'gifLink': 'https://gfycat.com/ifr/GlamorousEnchantingFlyingfish',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Pork and Cheese Fried Cutlets": {
+    "porkandcheesefriedcutlets": {
+        'name': 'Pork and Cheese Fried Cutlets',
         'gifLink': 'https://i.imgur.com/DaPxoY1.gifv',
         'cuisine': 'Japanese',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Chorizo Queso Dip": {
+    "chorizoquesodip": {
+        'name': 'Chorizo Queso Dip',
         'gifLink': 'https://gfycat.com/ifr/PitifulHandsomeGrassspider',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Appetizer'
     },
-    "Creamy Sun-Dried Tomato Chicken": {
+    "creamysun-driedtomatochicken": {
+        'name': 'Creamy Sun-Dried Tomato Chicken',
         'gifLink': 'https://gfycat.com/ifr/JoyousCloseElectriceel',
         'cuisine': 'Italian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Garlic Butter Baked Chicken Thighs": {
+    "garlicbutterbakedchickenthighs": {
+        'name': 'Garlic Butter Baked Chicken Thighs',
         'gifLink': 'https://gfycat.com/ifr/ElderlyShortAnkole',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Homemade Chicken Nuggets": {
+    "homemadechickennuggets": {
+        'name': 'Homemade Chicken Nuggets',
         'gifLink': 'https://i.imgur.com/o4q2w3n.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "The Pan Galactic Gargle Blaster": {
+    "thepangalacticgargleblaster": {
+        'name': 'The Pan Galactic Gargle Blaster',
         'gifLink': 'https://gfycat.com/ifr/GrotesqueMatureGalapagossealion',
         'cuisine': 'Betelgeusian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Drink'
     },
-    "Guinness Beef Stew with Cheddar Herb Dumplings": {
+    "guinnessbeefstewwithcheddarherbdumplings": {
+        'name': 'Guinness Beef Stew with Cheddar Herb Dumplings',
         'gifLink': 'https://gfycat.com/ifr/OrneryKindlyFreshwatereel',
         'cuisine': 'Irish',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Herb Roasted Potatoes": {
+    "herbroastedpotatoes": {
+        'name': 'Herb Roasted Potatoes',
         'gifLink': 'http://i.imgur.com/wv4rdV9.gifv',
         'cuisine': 'Italian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Elote Dip": {
+    "elotedip": {
+        'name': 'Elote Dip',
         'gifLink': 'https://gfycat.com/ifr/ConstantUnfinishedCopepod',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "One-Pot Chili Mac": {
+    "one-potchilimac": {
+        'name': 'One-Pot Chili Mac',
         'gifLink': 'https://gfycat.com/ifr/TartOilyGecko',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Churros with Chocolate Drizzle": {
+    "churroswithchocolatedrizzle": {
+        'name': 'Churros with Chocolate Drizzle',
         'gifLink': 'https://gfycat.com/ifr/LinedBigHind',
         'cuisine': 'Mexican',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Dessert'
     },
-    "Chicken Curry Naan Bowls": {
+    "chickencurrynaanbowls": {
+        'name': 'Chicken Curry Naan Bowls',
         'gifLink': 'https://gfycat.com/ifr/TanFirsthandIslandcanary',
         'cuisine': 'Indian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Roasted Pork Shoulder": {
+    "roastedporkshoulder": {
+        'name': 'Roasted Pork Shoulder',
         'gifLink': 'https://gfycat.com/ifr/PopularPhysicalGuineapig',
         'cuisine': 'Unknown',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "White Trash Hash": {
+    "whitetrashhash": {
+        'name': 'White Trash Hash',
         'gifLink': 'https://i.imgur.com/1EDve9E.gifv',
         'cuisine': 'American',
         'meal': 'Breakfast',
         'mealCourse': 'Main Course'
     },
-    "Potato Cheese Pie": {
+    "potatocheesepie": {
+        'name': 'Potato Cheese Pie',
         'gifLink': 'https://i.imgur.com/lmLaSCv.gifv',
         'cuisine': 'American',
         'meal': 'Lunch/Dinner',
-        'mealCourse': 'Appetizer/Side Dish'
+        'mealCourse': 'Appetizer'
     },
-    "Kladdkaka": {
+    "kladdkaka": {
+        'name': 'Kladdkaka',
         'gifLink': 'https://gfycat.com/ifr/InformalThatGlowworm',
         'cuisine': 'Swedish',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Korean-Style Ribs": {
+    "korean-styleribs": {
+        'name': 'Korean-Style Ribs',
         'gifLink': 'https://gfycat.com/ifr/YearlyIlliterateHyena',
         'cuisine': 'Korean',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Korean Cream Cheese Garlic Bread": {
+    "koreancreamcheesegarlicbread": {
+        'name': 'Korean Cream Cheese Garlic Bread',
         'gifLink': 'https://i.imgur.com/4iCZMsS.gifv',
         'cuisine': 'Korean',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Filipino Lechon": {
+    "filipinolechon": {
+        'name': 'Filipino Lechon',
         'gifLink': 'https://gfycat.com/ifr/UnrulyAdorableDotterel',
         'cuisine': 'Filipino',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Berbere Spice Chicken Wings": {
+    "berberespicechickenwings": {
+        'name': 'Berbere Spice Chicken Wings',
         'gifLink': 'https://gfycat.com/ifr/HauntingCharmingJackal',
         'cuisine': 'Ethiopian',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Bazlama": {
+    "bazlama": {
+        'name': 'Bazlama',
         'gifLink': 'https://gfycat.com/ifr/CircularLegalIndigowingedparrot',
         'cuisine': 'Turkish',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Side Dish'
     },
-    "Falafel": {
+    "falafel": {
+        'name': 'Falafel',
         'gifLink': 'https://gfycat.com/ifr/EnergeticNecessaryBellfrog',
-        'cuisine': 'Israelian',
+        'cuisine': 'Israeli',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "Potato Leek Soup": {
+    "potatoleeksoup": {
+        'name': 'Potato Leek Soup',
         'gifLink': 'https://gfycat.com/ifr/AgreeableGlamorousHomalocephale',
         'cuisine': 'Unknown',
         'meal': 'Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
+    "blankrecipe": {
+        'name': '',
+        'gifLink': '',
+        'cuisine': '',
+        'meal': '',
+        'mealCourse': ''
+    },
+    "notfound": {
+        'name': 'Recipe Not Found',
         'gifLink': '',
         'cuisine': '',
         'meal': '',
@@ -674,6 +759,49 @@ const recipes = {
     },
 };
 
+function getMeal(mealType){
+    let answer = [];
+    const keys = Object.keys(recipes);
+
+    for(let i=0; i<keys.length; i++){
+        if(recipes[keys[i]].meal === `${mealType}`){
+            console.log(recipes[keys[i]])
+            answer.push(recipes[keys[i]]);
+        }
+    }
+    return answer;
+}
+
+function getCuisine(cuisineType){
+    let answer = [];
+    const keys = Object.keys(recipes);
+
+    for(let i=0; i<keys.length; i++){
+        if(recipes[keys[i]].cuisine === `${cuisineType}`){
+            console.log(recipes[keys[i]])
+            answer.push(recipes[keys[i]]);
+        }
+    }
+    return answer;
+}
+
+function getCourse(courseType){
+    let answer = [];
+    const keys = Object.keys(recipes);
+
+    for(let i=0; i<keys.length; i++){
+        if(recipes[keys[i]].mealCourse === `${courseType}`){
+            console.log(recipes[keys[i]])
+            answer.push(recipes[keys[i]]);
+        }
+    }
+    return answer;
+}
+
+function getRandomProperty(obj) {
+    const keys = Object.keys(obj);
+    return keys[Math.floor(Math.random() * keys.length)];
+}
 
 /* ===Server Routing======================================= */
 app.get('/', (req, res) => {
@@ -682,6 +810,96 @@ app.get('/', (req, res) => {
 
 app.get('/api/allRecipes', (req, res) => {
    res.json(recipes);
+});
+
+app.get('/api/search/:recipe', (req, res) => {
+    const recipeChoice = req.params.recipe.toLowerCase().trim().replace(/\s+/g, "");
+    if(recipes[recipeChoice]){
+        res.json(recipes[recipeChoice])
+    }else{
+        res.json(recipes['notfound'])
+        //TODO Add way to return closest matching result!
+    }
+});
+
+app.get('/api/random', (req, res) => {
+    let randomRec = getRandomProperty(recipes);
+    res.json(recipes[randomRec])
+});
+
+app.get('/api/filter/cuisine/:cuisineType', (req, res) => {
+    const cuisineChoice = req.params.cuisineType.toLowerCase().trim().replace(/\s+/g, "");
+    if (cuisineChoice === 'american'){
+        res.json(getCuisine("American"));
+    } else if (cuisineChoice === 'chinese'){
+        res.json(getCuisine("Chinese"))
+    } else if (cuisineChoice === 'japanese'){
+        res.json(getCuisine("Japanese"))
+    } else if (cuisineChoice === 'korean'){
+        res.json(getCuisine("Korean"))
+    } else if (cuisineChoice === 'unknown'){
+        res.json(getCuisine("Unknown"))
+    } else if (cuisineChoice === 'turkish'){
+        res.json(getCuisine("Turkish"))
+    } else if (cuisineChoice === 'italian'){
+        res.json(getCuisine("Italian"))
+    } else if (cuisineChoice === 'ethiopian'){
+        res.json(getCuisine("Ethiopian"))
+    } else if (cuisineChoice === 'isreali'){
+        res.json(getCuisine("Isreali"))
+    } else if (cuisineChoice === 'filipino'){
+        res.json(getCuisine("Filipino"))
+    } else if (cuisineChoice === 'swedish'){
+        res.json(getCuisine("Swedish"))
+    } else if (cuisineChoice === 'indian'){
+        res.json(getCuisine("Indian"))
+    } else if (cuisineChoice === 'mexican'){
+        res.json(getCuisine("Mexican"))
+    } else if (cuisineChoice === 'irish'){
+        res.json(getCuisine("Irish"))
+    } else if (cuisineChoice === 'betelgeusian'){
+        res.json(getCuisine("Betelgeusian"))
+    } else if (cuisineChoice === 'mongolian'){
+        res.json(getCuisine("Mongolian"))
+    } else if (cuisineChoice === 'arabian'){
+        res.json(getCuisine("Arabian"))
+    } else if (cuisineChoice === 'german'){
+        res.json(getCuisine("German"))
+    } else if (cuisineChoice === 'vietnamese'){
+        res.json(getCuisine("Vietnamese"))
+    } else if (cuisineChoice === 'african'){
+        res.json(getCuisine("African"))
+    } else if (cuisineChoice === 'french'){
+        res.json(getCuisine("French"))
+    } else if (cuisineChoice === 'greek'){
+        res.json(getCuisine("Greek"))
+    } else if (cuisineChoice === 'russian'){
+        res.json(getCuisine("Russian"))
+    }
+});
+
+app.get('/api/filter/meal/:mealType', (req, res) => {
+    const mealChoice = req.params.mealType.toLowerCase().trim().replace(/\s+/g, "");
+    if (mealChoice === 'breakfast'){
+        res.json(getMeal('Breakfast'));
+    } else if ((mealChoice === 'lunch') || (mealChoice === 'dinner')){
+        res.json(getMeal('Lunch/Dinner'));
+    }
+});
+
+app.get('/api/filter/course/:courseType', (req, res) => {
+    const courseType = req.params.courseType.toLowerCase().trim().replace(/\s+/g, "");
+    if (courseType === 'maincourse'){
+        res.json(getCourse('Main Course'));
+    } else if (courseType === 'sidedish'){
+        res.json(getCourse('Side Dish'))
+    } else if (courseType === 'appetizer'){
+        res.json(getCourse('Appetizer'))
+    } else if (courseType === 'dessert'){
+        res.json(getCourse('Dessert'))
+    } else if (courseType === 'drink'){
+        res.json(getCourse('Drink'))
+    }
 });
 
 /* ===Run Server========================================== */
