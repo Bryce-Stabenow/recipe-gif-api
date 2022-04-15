@@ -480,161 +480,191 @@ const recipes = {
         'meal': 'Breakfast/Lunch/Dinner',
         'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Cheesy Scalloped Potatoes": {
+        'gifLink': 'https://gfycat.com/ifr/LargeDeficientKentrosaurus',
+        'cuisine': 'Unknown',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Parmesan Crusted Chicken Breast": {
+        'gifLink': 'https://gfycat.com/ifr/FluffySmoggyGoldenmantledgroundsquirrel',
+        'cuisine': 'Italian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Baba Ganoush": {
+        'gifLink': 'https://gfycat.com/ifr/SimplisticSmartBobwhite',
+        'cuisine': 'Middle East',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Tomato Soup": {
+        'gifLink': 'https://gfycat.com/ifr/ClosedPlaintiveLeafhopper',
+        'cuisine': 'French',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course/Side Dish'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "One-Pot Chinese Ribs": {
+        'gifLink': 'https://gfycat.com/ifr/TornSparklingBackswimmer',
+        'cuisine': 'Chinese',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main COurse'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Buffalo Chicken Pull-Apart Bread": {
+        'gifLink': 'https://i.imgur.com/KrFJO8V.gifv',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Appetizer/Side Dish'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Stuffed French Toast": {
+        'gifLink': 'https://i.imgur.com/o8HTk6v.gifv',
+        'cuisine': 'French',
+        'meal': 'Breakfast',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Crispy Chili Beef": {
+        'gifLink': 'https://gfycat.com/ifr/GlamorousEnchantingFlyingfish',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Pork and Cheese Fried Cutlets": {
+        'gifLink': 'https://i.imgur.com/DaPxoY1.gifv',
+        'cuisine': 'Japanese',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Chorizo Queso Dip": {
+        'gifLink': 'https://gfycat.com/ifr/PitifulHandsomeGrassspider',
+        'cuisine': 'Mexican',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Appetizer'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Creamy Sun-Dried Tomato Chicken": {
+        'gifLink': 'https://gfycat.com/ifr/JoyousCloseElectriceel',
+        'cuisine': 'Italian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Garlic Butter Baked Chicken Thighs": {
+        'gifLink': 'https://gfycat.com/ifr/ElderlyShortAnkole',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Homemade Chicken Nuggets": {
+        'gifLink': 'https://i.imgur.com/o4q2w3n.gifv',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "The Pan Galactic Gargle Blaster": {
+        'gifLink': 'https://gfycat.com/ifr/GrotesqueMatureGalapagossealion',
+        'cuisine': 'Betelgeusian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Drink'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Guinness Beef Stew with Cheddar Herb Dumplings": {
+        'gifLink': 'https://gfycat.com/ifr/OrneryKindlyFreshwatereel',
+        'cuisine': 'Irish',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Herb Roasted Potatoes": {
+        'gifLink': 'http://i.imgur.com/wv4rdV9.gifv',
+        'cuisine': 'Italian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Side Dish'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Elote Dip": {
+        'gifLink': 'https://gfycat.com/ifr/ConstantUnfinishedCopepod',
+        'cuisine': 'Mexican',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "One-Pot Chili Mac": {
+        'gifLink': 'https://gfycat.com/ifr/TartOilyGecko',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Churros with Chocolate Drizzle": {
+        'gifLink': 'https://gfycat.com/ifr/LinedBigHind',
+        'cuisine': 'Mexican',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Dessert'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Chicken Curry Naan Bowls": {
+        'gifLink': 'https://gfycat.com/ifr/TanFirsthandIslandcanary',
+        'cuisine': 'Indian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Roasted Pork Shoulder": {
+        'gifLink': 'https://gfycat.com/ifr/PopularPhysicalGuineapig',
+        'cuisine': 'Unknown',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "White Trash Hash": {
+        'gifLink': 'https://i.imgur.com/1EDve9E.gifv',
+        'cuisine': 'American',
+        'meal': 'Breakfast',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Potato Cheese Pie": {
+        'gifLink': 'https://i.imgur.com/lmLaSCv.gifv',
+        'cuisine': 'American',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Appetizer/Side Dish'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Kladdkaka": {
+        'gifLink': 'https://gfycat.com/ifr/InformalThatGlowworm',
+        'cuisine': 'Swedish',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Korean-Style Ribs": {
+        'gifLink': 'https://gfycat.com/ifr/YearlyIlliterateHyena',
+        'cuisine': 'Korean',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
-    "BlankRecipe": {
-        'gifLink': '',
-        'cuisine': '',
-        'meal': '',
-        'mealCourse': ''
+    "Korean Cream Cheese Garlic Bread": {
+        'gifLink': 'https://i.imgur.com/4iCZMsS.gifv',
+        'cuisine': 'Korean',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
+    },
+    "Filipino Lechon": {
+        'gifLink': 'https://gfycat.com/ifr/UnrulyAdorableDotterel',
+        'cuisine': 'Filipino',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
+    },
+    "Berbere Spice Chicken Wings": {
+        'gifLink': 'https://gfycat.com/ifr/HauntingCharmingJackal',
+        'cuisine': 'Ethiopian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
+    },
+    "Bazlama": {
+        'gifLink': 'https://gfycat.com/ifr/CircularLegalIndigowingedparrot',
+        'cuisine': 'Turkish',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Side Dish'
+    },
+    "Falafel": {
+        'gifLink': 'https://gfycat.com/ifr/EnergeticNecessaryBellfrog',
+        'cuisine': 'Israelian',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
+    },
+    "Potato Leek Soup": {
+        'gifLink': 'https://gfycat.com/ifr/AgreeableGlamorousHomalocephale',
+        'cuisine': 'Unknown',
+        'meal': 'Lunch/Dinner',
+        'mealCourse': 'Main Course'
     },
     "BlankRecipe": {
         'gifLink': '',
