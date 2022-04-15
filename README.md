@@ -8,7 +8,7 @@ A quick and useful API that delivers recipes in the Internet's favorite file for
   </p>
 </div>
 
-<img src="https://gfycat.com/ifr/GrotesqueMatureGalapagossealion">
+<iframe src='https://gfycat.com/ifr/GrotesqueMatureGalapagossealion' frameborder='0' scrolling='no' allowfullscreen width='640' height='684'></iframe>
 <!-- LICENSE -->
 ## License
 
