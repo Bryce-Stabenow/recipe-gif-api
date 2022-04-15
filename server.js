@@ -806,6 +806,7 @@ function getRandomProperty(obj) {
 /* ===Server Routing======================================= */
 app.get('/', (req, res) => {
    res.sendFile(__dirname + '/public' + '/index.html');
+   //res.sendFile(__dirname + '/public' + '/css' + '/style.css')
 })
 
 app.get('/api/allRecipes', (req, res) => {

@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main{
+    margin: 0 2.5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    align-self: center;
+    margin-top: 25px;
+}
+a{
+    color: rgb(195, 206, 255);
+}
+header{
+    text-align: center;
+    width: 100%;
+}
+div > h2{
+    text-align: center;
+    margin-top: 10px;
+    color:rgb(108, 134, 250);
+    font-size: 3rem;
+}
+p, li, code{
+    font-size: 1.15rem;
+}
+p > code, li > code {
+    font-size: 1rem;
+}
+code{
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+.snippet{
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 2.5%;
+    width: 70%;
+}
+h1{
+    color: white;
+    font-size: 3.5rem;
+    margin: 20px 0 10px 0;
+}
+#result, #all, #searching, #filtering{
+    margin-top: 50px;
+    padding: 2.5%;
+    background-color: rgb(82, 82, 82);
+    border-radius: 10px;
+}
+#secondHead{
+    font-size: 2rem;
+    color: rgb(182, 189, 253);
+}
+#example{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width: 50%;
+    height: 375px;
+}
+footer, header{
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    padding: 1% 5%;
+    width: 100%;   
+}
+footer{
+    margin-top: 50px;
+}
+footer p{
+    margin: 0;
+}

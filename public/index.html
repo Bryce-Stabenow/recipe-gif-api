@@ -4,33 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>GIF Recipe API</title>
 </head>
 <body>
     <header>
         <h1>GIF Recipe API</h1>
-        <h2><i>Must use iframe to enable playback</i></h2>
-        <p>This API was developed by <a href="https://github.com/Bryce-Stabenow" target="_blank">Bryce Stabenow </a>to provide a useful interface for those looking to get GIFs of creative recipes online.</p>
-        <img src="/public/The-Emperor-s-New-Groove-the-emperors-new-groove-39349997-500-285.gif" alt="dumb gif from The Emporer's New Groove">
+        <p>This API was developed by <a href="https://github.com/Bryce-Stabenow" target="_blank">Bryce Stabenow</a> to provide a useful interface for those looking to get GIFs of creative recipes online.</p>
     </header>
     <main>
-        <h2>Result Format</h2>
-        <p>The result of basic requests is a JSON file containing whatever has been requested. A seach, for example, for falafel would return the following: <br>
-            <code>{<br>
-            'name': 'Falafel',<br>
-            'gifLink': 'https://gfycat.com/ifr/EnergeticNecessaryBellfrog',<br>
-            'cuisine': 'Israeli',<br>
-            'meal': 'Lunch/Dinner',<br>
-            'mealCourse': 'Main Course'<br>
-        }<br></code></p>
-        <h2>Getting Random Recipes</h2>
-        <h2>Get All Recipes</h2>
-        <h2>Searching Recipes</h2>
-        <h2>Filtering Recipes</h2>
-        <h3>Filtering by Type of Cuisine</h3>
-        <h3>Filtering by Meal</h3>
-        <h3>Filtering by Course</h3>
+        <img src="https://raw.githubusercontent.com/Bryce-Stabenow/recipe-gif-api/main/public/The-Emperor-s-New-Groove-the-emperors-new-groove-39349997-500-285.gif" alt="dumb gif from The Emporer's New Groove">
+        <div id="result">
+            <h2>Result Format</h2>
+            <h2 id="secondHead"><i>****Must use iframe to enable playback****</i></h2>
+            <p>The result of basic requests is a JSON file containing whatever has been requested. A seach, for example, for falafel would return the following: </p><div class="snippet">
+                <code>{<br>
+                'name': 'Falafel',<br>
+                'gifLink': 'https://gfycat.com/ifr/EnergeticNecessaryBellfrog',<br>
+                'cuisine': 'Israeli',<br>
+                'meal': 'Lunch/Dinner',<br>
+                'mealCourse': 'Main Course'<br>
+            }</code></div> <p>The resulting data provides a gif link that is accessible using an iframe. Due to copyright laws, providing the GIFs themsleves proves messy, so this is the best solution for both you and me.</p>
+            <p>To get a random recipe from the API, simply send a GET request to <code>https://gif-recipe-api.herokuapp.com/api/random</code></p>
+            <div id="example">
+                <label>Example:</label>
+                <iframe src="https://gfycat.com/ifr/EnergeticNecessaryBellfrog"></iframe>
+            </div>
+        </div>
+        <div id="all">
+            <h2>Get All Recipes</h2>
+            <p>To get a list of all recipes from the API, simply send a GET request to <code>https://gif-recipe-api.herokuapp.com/api/allRecipes</code>. The API currently has ~106 different recipes to choose from, so the resulting JSON is quite long.</p>
+        </div>
+        <div id="searching">
+            <h2>Searching Recipes</h2>
+            <p>To seach for a particular recipe, you can send a GET request to <code>https://gif-recipe-api.herokuapp.com/api/search/&lt;&lt;recipename&gt;&gt;</code>. If the request cannot find a matching response in the current database, it will return the following blank JSON:</p><div class="snippet"><code>
+                {<br>
+                    'name': 'Recipe Not Found',<br>
+                    'gifLink': '',<br>
+                    'cuisine': '',<br>
+                    'meal': '',<br>
+                    'mealCourse': ''<br>
+                }</code></div><p> There currently is no "closest answer" response, but this is something that I hope to implement in future versions of this API. If you would like to help contribute to this project, for the Github repo and send me a pull request!</p>
+        </div>
+        <div id="filtering">
+            <h2>Filtering Recipes</h2>
+            <p>Filtering by be via the three object props listed for each recipe.</p>
+            <p>Current endpoints:</p>
+            <ul>
+                <li>Filter by Cuisine: <code>http://localhost:3000/api/filter/cuisine/&lt;&lt;Nationality&gt;&gt;</code></li>
+                <li>Filter by Meal: <code>http://localhost:3000/api/filter/meal/&lt;&lt;Breakfast, Lunch, or Dinner&gt;&gt;</code></li>
+                <li>Filter by Course: <code>http://localhost:3000/api/filter/course/&lt;&lt;Main Course, Side Dish, Appetizer, Dessert, or Drink&gt;&gt;</code></li>
+            </ul>
+            <p>The currently supported nationalities for the 'cuisine' filter are American, Chinese, Japanese, Korean, Turkish, Italian, Ethiopean, Isreali, Filipino, Swedish, Indian, Mexican, Irish, Betelgeusian, Mongolian, Arabian, German, Vietnamese, African, French, Greek, Russian, and Unknown.</p>
+        </div>
     </main>
+    <footer>
+        <p><a href="https://github.com/Bryce-Stabenow/recipe-gif-api" target="_blank">Click here</a> if you would like to view this project on Github. Also, if you want to connect or send me a message please reach on <a href="https://twitter.com/BryceStabenow" target="_blank">Twitter</a></p>
+    </footer>
 </body>
 </html>
