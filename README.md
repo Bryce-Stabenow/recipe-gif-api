@@ -4,7 +4,7 @@ A quick and useful API that delivers recipes in the Internet's favorite file for
 <div id="top"></div>
 
   <p align="center">
-    This is an API I created to organize and send GIF recipes, like those taken from <a href="https://www.reddit.com/r/GifRecipes/">Reddit.com/r/GifRecipes</a>. Please see the index page for documentation about its use!
+    This is an API I created to organize and send GIF recipes, like those taken from <a href="https://www.reddit.com/r/GifRecipes/">Reddit.com/r/GifRecipes</a>. Please see the index.html page for documentation about its use!
   </p>
 </div>
 

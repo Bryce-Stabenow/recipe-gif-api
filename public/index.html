@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="css/style.css">
     <title>GIF Recipe API</title>
 </head>
 <body>
-    <h1>GIF Recipe API</h1>
-    <h2>Must use iframe to enable playback</h2>
-    <
+    <header>
+        <h1>GIF Recipe API</h1>
+        <h2><i>Must use iframe to enable playback</i></h2>
+        <p>This API was developed by <a href="https://github.com/Bryce-Stabenow" target="_blank">Bryce Stabenow </a>to provide a useful interface for those looking to get GIFs of creative recipes online.</p>
+        <img src="/public/The-Emperor-s-New-Groove-the-emperors-new-groove-39349997-500-285.gif" alt="dumb gif from The Emporer's New Groove">
+    </header>
+    <main>
+        <h2>Result Format</h2>
+        <p>The result of basic requests is a JSON file containing whatever has been requested. A seach, for example, for falafel would return the following: <br>
+            <code>{<br>
+            'name': 'Falafel',<br>
+            'gifLink': 'https://gfycat.com/ifr/EnergeticNecessaryBellfrog',<br>
+            'cuisine': 'Israeli',<br>
+            'meal': 'Lunch/Dinner',<br>
+            'mealCourse': 'Main Course'<br>
+        }<br></code></p>
+        <h2>Getting Random Recipes</h2>
+        <h2>Get All Recipes</h2>
+        <h2>Searching Recipes</h2>
+        <h2>Filtering Recipes</h2>
+        <h3>Filtering by Type of Cuisine</h3>
+        <h3>Filtering by Meal</h3>
+        <h3>Filtering by Course</h3>
+    </main>
 </body>
 </html>
