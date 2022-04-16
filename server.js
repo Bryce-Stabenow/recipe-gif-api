@@ -2,7 +2,8 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
-
+const cors = require('cors')
+app.use(cors())
 
 /* ===API Data Storage (until migration to MongoDB)======== */
 const recipes = {
@@ -806,8 +807,12 @@ function getRandomProperty(obj) {
 /* ===Server Routing======================================= */
 app.get('/', (req, res) => {
    res.sendFile(__dirname + '/public' + '/index.html');
-   //res.sendFile(__dirname + '/public' + '/css' + '/style.css')
 })
+
+app.get('/public/style/style.css', function(req, res) {
+    res.setHeader()
+    res.sendFile(__dirname + "/public" + "/css" + "/style.css");
+  });
 
 app.get('/api/allRecipes', (req, res) => {
    res.json(recipes);
